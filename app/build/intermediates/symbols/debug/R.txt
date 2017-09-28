@@ -667,8 +667,7 @@ int id custom 0x7f0c0052
 int id customPanel 0x7f0c0051
 int id decor_content_parent 0x7f0c005b
 int id default_activity_button 0x7f0c0042
-int id description 0x7f0c0071
-int id description_text 0x7f0c008a
+int id description_text 0x7f0c0072
 int id design_bottom_sheet 0x7f0c0074
 int id design_menu_item_action_area 0x7f0c007b
 int id design_menu_item_action_area_stub 0x7f0c007a
@@ -684,7 +683,6 @@ int id enterAlwaysCollapsed 0x7f0c0016
 int id exitUntilCollapsed 0x7f0c0017
 int id expand_activities_button 0x7f0c0040
 int id expanded_menu 0x7f0c0053
-int id filename_text 0x7f0c008b
 int id fill 0x7f0c002f
 int id fill_horizontal 0x7f0c0030
 int id fill_vertical 0x7f0c0026
@@ -694,7 +692,7 @@ int id homeAsUp 0x7f0c000f
 int id icon 0x7f0c0044
 int id ifRoom 0x7f0c0037
 int id image 0x7f0c0041
-int id image_view 0x7f0c008c
+int id image_view 0x7f0c0089
 int id info 0x7f0c0087
 int id item_touch_helper_previous_elevation 0x7f0c0005
 int id left 0x7f0c0027
@@ -715,7 +713,6 @@ int id parallax 0x7f0c002b
 int id parentPanel 0x7f0c0048
 int id photo_image 0x7f0c0070
 int id pin 0x7f0c002c
-int id product_id_textView 0x7f0c0072
 int id progress_circular 0x7f0c0006
 int id progress_horizontal 0x7f0c0007
 int id progressbar 0x7f0c006e
@@ -762,14 +759,14 @@ int id textSpacerNoButtons 0x7f0c004f
 int id time 0x7f0c0082
 int id title 0x7f0c0045
 int id title_template 0x7f0c004a
-int id title_text 0x7f0c0089
+int id title_text 0x7f0c0071
 int id top 0x7f0c002a
 int id topPanel 0x7f0c0049
 int id touch_outside 0x7f0c0073
 int id up 0x7f0c0009
 int id useLogo 0x7f0c0014
 int id view_offset_helper 0x7f0c000a
-int id vpPager 0x7f0c008d
+int id view_pager 0x7f0c008a
 int id withText 0x7f0c0039
 int id wrap_content 0x7f0c0020
 int integer abc_config_activityDefaultDur 0x7f0a0001

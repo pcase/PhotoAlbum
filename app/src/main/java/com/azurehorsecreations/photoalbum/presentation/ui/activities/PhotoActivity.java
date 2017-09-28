@@ -12,10 +12,8 @@ import com.azurehorsecreations.photoalbum.R;
 import com.azurehorsecreations.photoalbum.data.repository.PhotoRepository;
 import com.azurehorsecreations.photoalbum.domain.executor.impl.ThreadExecutor;
 import com.azurehorsecreations.photoalbum.domain.model.PhotoMetadata;
-import com.azurehorsecreations.photoalbum.domain.model.Photo;
 import com.azurehorsecreations.photoalbum.presentation.MainThreadImpl;
 import com.azurehorsecreations.photoalbum.presentation.presenters.IPhotoMetadataPresenter;
-import com.azurehorsecreations.photoalbum.presentation.presenters.IPhotoPresenter;
 import com.azurehorsecreations.photoalbum.presentation.presenters.impl.PhotoMetadataPresenterImpl;
 import com.azurehorsecreations.photoalbum.presentation.ui.EndlessRecyclerViewScrollListener;
 import com.azurehorsecreations.photoalbum.presentation.ui.adapters.PhotoAdapter;
@@ -106,12 +104,12 @@ public class PhotoActivity extends AppCompatActivity implements View, PhotoAdapt
                 currentList.add(mAdapter.getItem(i));
             }
             currentList.addAll(photos);
-            mAdapter = new PhotoAdapter(this, (ArrayList<PhotoMetadata>) currentList);
+            mAdapter = new PhotoAdapter(this, (ArrayList<PhotoMetadata>) currentList, this);
             mAdapter.notifyDataSetChanged();
         } else {
             List<PhotoMetadata> photoList = new ArrayList<>();
             photoList.addAll(photos);
-            mAdapter = new PhotoAdapter(this, (ArrayList<PhotoMetadata>) photoList);
+            mAdapter = new PhotoAdapter(this, (ArrayList<PhotoMetadata>) photoList, this);
             mAdapter.notifyDataSetChanged();
         }
         mRecyclerView.setAdapter(mAdapter);

@@ -51,8 +51,6 @@ public class PhotoMetadataAdapter extends RecyclerView.Adapter<PhotoMetadataAdap
         holder.titleTextView.setText(title);
         String description = mPhotoList.get(position).getDescription();
         holder.descriptionTextView.setText(description);
-        String filename = mPhotoList.get(position).getFilename();
-        holder.filenameTextView.setText(filename);
     }
 
     @Override
@@ -66,9 +64,6 @@ public class PhotoMetadataAdapter extends RecyclerView.Adapter<PhotoMetadataAdap
 
         @Bind(R.id.description_text)
         protected TextView descriptionTextView;
-
-        @Bind(R.id.filename_text)
-        protected TextView filenameTextView;
 
         public ViewHolder(View itemView) {
             super(itemView);

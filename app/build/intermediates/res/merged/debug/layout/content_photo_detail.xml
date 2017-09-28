@@ -18,22 +18,57 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"/>
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#444">
+            </TableRow>
+
             <TextView
-                android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/padding"
                 android:paddingRight="@dimen/padding"
+                android:textStyle="bold"
                 android:text="Title:"/>
 
             <TextView
-                android:id="@+id/description"
+                android:id="@+id/title_text"
+                android:paddingLeft="@dimen/padding"
+                android:layout_gravity="left"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#444">
+            </TableRow>
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/product_id_textView"
                 android:paddingLeft="@dimen/padding"
                 android:paddingRight="@dimen/padding"
+                android:textStyle="bold"
                 android:text="Description:"/>
+
+            <TextView
+                android:id="@+id/description_text"
+                android:paddingLeft="@dimen/padding"
+                android:layout_gravity="left"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#444">
+            </TableRow>
 
             <ProgressBar
                 android:id="@+id/progressbar"

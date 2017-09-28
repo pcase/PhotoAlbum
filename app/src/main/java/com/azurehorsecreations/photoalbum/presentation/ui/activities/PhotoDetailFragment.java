@@ -27,16 +27,16 @@ public class PhotoDetailFragment extends Fragment {
     private static final String TAG = "PhotoDetailFrag";
     private PhotoMetadata photo;
 
-    @Bind(R.id.title)
+    @Bind(R.id.title_text)
     TextView title;
 
-    @Bind(R.id.description)
+    @Bind(R.id.description_text)
     TextView description;
 
     public static PhotoDetailFragment newInstance(PhotoMetadata photo) {
         PhotoDetailFragment fragmentFirst = new PhotoDetailFragment();
         Bundle args = new Bundle();
-        args.putString("titlr", photo.getTitle());
+        args.putString("title", photo.getTitle());
         args.putString("description", photo.getDescription());
         fragmentFirst.setArguments(args);
         return fragmentFirst;

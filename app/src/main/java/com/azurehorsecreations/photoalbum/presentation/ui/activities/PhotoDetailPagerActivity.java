@@ -26,21 +26,21 @@ public class PhotoDetailPagerActivity extends AppCompatActivity {
     private PhotoMetadata[] photoArray;
     FragmentPagerAdapter adapterViewPager;
     List<Fragment> fragments;
-    @Bind(R.id.vpPager)
-    ViewPager vpPager;
+    @Bind(R.id.view_pager)
+    ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.view_pager);
         ButterKnife.bind(this);
-        Parcelable parcelablePhoto = getIntent().getParcelableExtra("PRODUCT");
+        Parcelable parcelablePhoto = getIntent().getParcelableExtra("PHOTO");
         photoArray = new PhotoMetadata[1];
         photoArray[0] = (PhotoMetadata)parcelablePhoto;
         fragments = new ArrayList<>();
         fragments.add(PhotoDetailFragment.newInstance(photoArray[0]));
         adapterViewPager = new PhotoDetailPagerAdapter(getSupportFragmentManager(), fragments);
-        vpPager.setAdapter(adapterViewPager);
+        viewPager.setAdapter(adapterViewPager);
 
 //        Parcelable[] parcelableProductArray = getIntent().getParcelableArrayExtra(PRODUCT);
 //        productArray = new Product[parcelableProductArray.length];

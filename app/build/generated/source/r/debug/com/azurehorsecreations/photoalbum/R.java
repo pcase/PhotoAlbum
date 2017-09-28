@@ -2628,8 +2628,7 @@ containing a value of this type.
         public static final int customPanel=0x7f0c0051;
         public static final int decor_content_parent=0x7f0c005b;
         public static final int default_activity_button=0x7f0c0042;
-        public static final int description=0x7f0c0071;
-        public static final int description_text=0x7f0c008a;
+        public static final int description_text=0x7f0c0072;
         public static final int design_bottom_sheet=0x7f0c0074;
         public static final int design_menu_item_action_area=0x7f0c007b;
         public static final int design_menu_item_action_area_stub=0x7f0c007a;
@@ -2645,7 +2644,6 @@ containing a value of this type.
         public static final int exitUntilCollapsed=0x7f0c0017;
         public static final int expand_activities_button=0x7f0c0040;
         public static final int expanded_menu=0x7f0c0053;
-        public static final int filename_text=0x7f0c008b;
         public static final int fill=0x7f0c002f;
         public static final int fill_horizontal=0x7f0c0030;
         public static final int fill_vertical=0x7f0c0026;
@@ -2655,7 +2653,7 @@ containing a value of this type.
         public static final int icon=0x7f0c0044;
         public static final int ifRoom=0x7f0c0037;
         public static final int image=0x7f0c0041;
-        public static final int image_view=0x7f0c008c;
+        public static final int image_view=0x7f0c0089;
         public static final int info=0x7f0c0087;
         public static final int item_touch_helper_previous_elevation=0x7f0c0005;
         public static final int left=0x7f0c0027;
@@ -2676,7 +2674,6 @@ containing a value of this type.
         public static final int parentPanel=0x7f0c0048;
         public static final int photo_image=0x7f0c0070;
         public static final int pin=0x7f0c002c;
-        public static final int product_id_textView=0x7f0c0072;
         public static final int progress_circular=0x7f0c0006;
         public static final int progress_horizontal=0x7f0c0007;
         public static final int progressbar=0x7f0c006e;
@@ -2723,14 +2720,14 @@ containing a value of this type.
         public static final int time=0x7f0c0082;
         public static final int title=0x7f0c0045;
         public static final int title_template=0x7f0c004a;
-        public static final int title_text=0x7f0c0089;
+        public static final int title_text=0x7f0c0071;
         public static final int top=0x7f0c002a;
         public static final int topPanel=0x7f0c0049;
         public static final int touch_outside=0x7f0c0073;
         public static final int up=0x7f0c0009;
         public static final int useLogo=0x7f0c0014;
         public static final int view_offset_helper=0x7f0c000a;
-        public static final int vpPager=0x7f0c008d;
+        public static final int view_pager=0x7f0c008a;
         public static final int withText=0x7f0c0039;
         public static final int wrap_content=0x7f0c0020;
     }

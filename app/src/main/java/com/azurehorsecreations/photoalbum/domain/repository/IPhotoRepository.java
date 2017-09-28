@@ -1,8 +1,5 @@
 package com.azurehorsecreations.photoalbum.domain.repository;
 
-import android.graphics.Bitmap;
-
-import com.azurehorsecreations.photoalbum.domain.model.Photo;
 import com.azurehorsecreations.photoalbum.domain.model.PhotoMetadata;
 
 import java.util.List;

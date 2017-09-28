@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import com.azurehorsecreations.photoalbum.contants.PhotoConstants;
 import com.azurehorsecreations.photoalbum.domain.model.PhotoMetadata;
-import com.azurehorsecreations.photoalbum.domain.model.Photo;
 import com.azurehorsecreations.photoalbum.R;
 import com.squareup.picasso.Picasso;
 
@@ -21,12 +20,14 @@ import java.util.ArrayList;
  */
 
 public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.ViewHolder> {
-        private ArrayList<PhotoMetadata> photoImages;
+        private ArrayList<PhotoMetadata> photoMetadatasList;
         private Context context;
+        private final OnItemClickListener listener;
 
-        public PhotoAdapter(Context context, ArrayList<PhotoMetadata> photoImages) {
+        public PhotoAdapter(Context context, ArrayList<PhotoMetadata> photoMetadataList, OnItemClickListener listener) {
             this.context = context;
-            this.photoImages = photoImages;
+            this.photoMetadatasList = photoMetadataList;
+            this.listener = listener;
         }
 
         @Override
@@ -36,18 +37,19 @@ public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.ViewHolder> 
         }
 
         @Override
-        public void onBindViewHolder(ViewHolder viewHolder, int i) {
-            viewHolder.photo_title.setText(photoImages.get(i).getTitle());
-            Picasso.with(context).load(PhotoConstants.PHOTO_DOWNLOAD_URL + photoImages.get(i).getFilename()).resize(120, 60).into(viewHolder.photo_image);
+        public void onBindViewHolder(ViewHolder viewHolder, int pos) {
+            viewHolder.click(photoMetadatasList.get(pos), listener);
+            viewHolder.photo_title.setText(photoMetadatasList.get(pos).getTitle());
+            Picasso.with(context).load(PhotoConstants.PHOTO_DOWNLOAD_URL + photoMetadatasList.get(pos).getFilename()).resize(120, 60).into(viewHolder.photo_image);
         }
 
         @Override
         public int getItemCount() {
-            return photoImages.size();
+            return photoMetadatasList.size();
         }
 
         public PhotoMetadata getItem(int id) {
-        return photoImages.get(id);
+        return photoMetadatasList.get(id);
     }
 
         public class ViewHolder extends RecyclerView.ViewHolder{
@@ -57,6 +59,15 @@ public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.ViewHolder> 
                 super(view);
                 photo_title = (TextView)view.findViewById(R.id.title_text);
                 photo_image = (ImageView)view.findViewById(R.id.image_view);
+            }
+
+            public void click(final PhotoMetadata photoMetadata, final OnItemClickListener listener) {
+                itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        listener.onClick(photoMetadata);
+                    }
+                });
             }
         }
 
