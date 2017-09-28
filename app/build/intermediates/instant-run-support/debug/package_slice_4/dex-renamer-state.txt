@@ -1,0 +1,4 @@
+#Wed Sep 27 17:42:01 PDT 2017
+base.0=/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4
+renamed.0=classes.dex
+file.0=/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex

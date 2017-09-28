@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/pattycase/.android/build-cache/02786419afeae6c7ebbd431d392ba0d0b9d1cedc/output/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/pattycase/.android/build-cache/02786419afeae6c7ebbd431d392ba0d0b9d1cedc/output/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/anim-v21/design_appbar_state_list_animator.xml",
+        "source": "/Users/pattycase/.android/build-cache/02786419afeae6c7ebbd431d392ba0d0b9d1cedc/output/res/anim-v21/design_appbar_state_list_animator.xml"
+    }
+]

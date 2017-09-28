@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/pattycase/.android/build-cache/151bb0a579ccad6671898394b7b53bdb9e2f1460/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/pattycase/.android/build-cache/151bb0a579ccad6671898394b7b53bdb9e2f1460/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/pattycase/.android/build-cache/151bb0a579ccad6671898394b7b53bdb9e2f1460/output/res/drawable-v21/abc_btn_colored_material.xml"
+    }
+]

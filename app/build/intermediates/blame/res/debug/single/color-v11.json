@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/pattycase/.android/build-cache/151bb0a579ccad6671898394b7b53bdb9e2f1460/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/pattycase/.android/build-cache/151bb0a579ccad6671898394b7b53bdb9e2f1460/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    }
+]

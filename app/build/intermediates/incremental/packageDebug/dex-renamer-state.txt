@@ -1,0 +1,7 @@
+#Wed Sep 27 17:38:16 PDT 2017
+base.0=/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_073aeee8e101ee73acd6aa49211497b7062756fb
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_ca904de97d6ffb558431f8d335f98a2b6f0dcf06/classes.dex
+base.1=/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_ca904de97d6ffb558431f8d335f98a2b6f0dcf06
+file.0=/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_073aeee8e101ee73acd6aa49211497b7062756fb/classes.dex
