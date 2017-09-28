@@ -2790,11 +2790,12 @@ containing a value of this type.
         public static final int notification_template_part_time=0x7f04002f;
         public static final int photo_detail_row_item=0x7f040030;
         public static final int photo_row_layout=0x7f040031;
-        public static final int select_dialog_item_material=0x7f040032;
-        public static final int select_dialog_multichoice_material=0x7f040033;
-        public static final int select_dialog_singlechoice_material=0x7f040034;
-        public static final int support_simple_spinner_dropdown_item=0x7f040035;
-        public static final int view_pager=0x7f040036;
+        public static final int photo_row_layout_landscape=0x7f040032;
+        public static final int select_dialog_item_material=0x7f040033;
+        public static final int select_dialog_multichoice_material=0x7f040034;
+        public static final int select_dialog_singlechoice_material=0x7f040035;
+        public static final int support_simple_spinner_dropdown_item=0x7f040036;
+        public static final int view_pager=0x7f040037;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

@@ -1,5 +1,6 @@
 package com.azurehorsecreations.photoalbum.presentation.ui.activities;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
@@ -30,6 +31,8 @@ import butterknife.ButterKnife;
 public class PhotoActivity extends AppCompatActivity implements View, PhotoAdapter.OnItemClickListener {
     private static final String TAG = "PhotoActivity";
     private static final int NUMBER_OF_COLUMNS = 1;
+    private boolean isPortrait = true;
+    private GridLayoutManager gridLayoutManager;
 
     private EndlessRecyclerViewScrollListener mScrollListener;
 
@@ -61,9 +64,7 @@ public class PhotoActivity extends AppCompatActivity implements View, PhotoAdapt
         );
 
         mRecyclerView.addItemDecoration(new SimpleDividerItemDecoration(this));
-        final GridLayoutManager gridLayoutManager = new GridLayoutManager(this, NUMBER_OF_COLUMNS);
-        mRecyclerView.setLayoutManager(gridLayoutManager);
-
+        setRecyclerGridLayout(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT);
         mScrollListener = new EndlessRecyclerViewScrollListener(gridLayoutManager) {
             @Override
             public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {
@@ -79,16 +80,41 @@ public class PhotoActivity extends AppCompatActivity implements View, PhotoAdapt
         mPresenter.resume();
     }
 
+    private void setRecyclerGridLayout(boolean isPortrait) {
+        if (isPortrait) {
+            gridLayoutManager = new GridLayoutManager(this, 1);
+            mRecyclerView.setLayoutManager(gridLayoutManager);
+        }
+        else{
+            gridLayoutManager = new GridLayoutManager(this, 2);
+            mRecyclerView.setLayoutManager(gridLayoutManager);
+        }
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            Toast.makeText(this, "landscape", Toast.LENGTH_SHORT).show();
+            isPortrait = false;
+        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+            Toast.makeText(this, "portrait", Toast.LENGTH_SHORT).show();
+            isPortrait = true;
+        }
+        setRecyclerGridLayout(isPortrait);
+    }
+
     @Override
     public void showProgress() {
         mProgressBar.setVisibility(android.view.View.VISIBLE);
-        Toast.makeText(this, R.string.retrieving, Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, R.string.retrieving, Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void hideProgress() {
         mProgressBar.setVisibility(android.view.View.INVISIBLE);
-        Toast.makeText(this, R.string.retrieved, Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, R.string.retrieved, Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -104,12 +130,12 @@ public class PhotoActivity extends AppCompatActivity implements View, PhotoAdapt
                 currentList.add(mAdapter.getItem(i));
             }
             currentList.addAll(photos);
-            mAdapter = new PhotoAdapter(this, (ArrayList<PhotoMetadata>) currentList, this);
+            mAdapter = new PhotoAdapter(this, (ArrayList<PhotoMetadata>) currentList, this, isPortrait);
             mAdapter.notifyDataSetChanged();
         } else {
             List<PhotoMetadata> photoList = new ArrayList<>();
             photoList.addAll(photos);
-            mAdapter = new PhotoAdapter(this, (ArrayList<PhotoMetadata>) photoList, this);
+            mAdapter = new PhotoAdapter(this, (ArrayList<PhotoMetadata>) photoList, this, isPortrait);
             mAdapter.notifyDataSetChanged();
         }
         mRecyclerView.setAdapter(mAdapter);

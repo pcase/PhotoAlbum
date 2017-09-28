@@ -825,11 +825,12 @@ int layout notification_template_part_chronometer 0x7f04002e
 int layout notification_template_part_time 0x7f04002f
 int layout photo_detail_row_item 0x7f040030
 int layout photo_row_layout 0x7f040031
-int layout select_dialog_item_material 0x7f040032
-int layout select_dialog_multichoice_material 0x7f040033
-int layout select_dialog_singlechoice_material 0x7f040034
-int layout support_simple_spinner_dropdown_item 0x7f040035
-int layout view_pager 0x7f040036
+int layout photo_row_layout_landscape 0x7f040032
+int layout select_dialog_item_material 0x7f040033
+int layout select_dialog_multichoice_material 0x7f040034
+int layout select_dialog_singlechoice_material 0x7f040035
+int layout support_simple_spinner_dropdown_item 0x7f040036
+int layout view_pager 0x7f040037
 int mipmap ic_launcher 0x7f030000
 int string abc_action_bar_home_description 0x7f060000
 int string abc_action_bar_home_description_format 0x7f060001

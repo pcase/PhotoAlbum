@@ -23,16 +23,23 @@ public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.ViewHolder> 
         private ArrayList<PhotoMetadata> photoMetadatasList;
         private Context context;
         private final OnItemClickListener listener;
+        private boolean isPortrait;
 
-        public PhotoAdapter(Context context, ArrayList<PhotoMetadata> photoMetadataList, OnItemClickListener listener) {
+        public PhotoAdapter(Context context, ArrayList<PhotoMetadata> photoMetadataList, OnItemClickListener listener, boolean isPortrait) {
             this.context = context;
             this.photoMetadatasList = photoMetadataList;
             this.listener = listener;
+            this.isPortrait = isPortrait;
         }
 
         @Override
         public PhotoAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-            View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.photo_row_layout, viewGroup, false);
+            View view;
+            if (isPortrait) {
+                view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.photo_row_layout, viewGroup, false);
+            } else {
+                view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.photo_row_layout_landscape, viewGroup, false);
+            }
             return new ViewHolder(view);
         }
 

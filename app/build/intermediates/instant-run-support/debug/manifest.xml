@@ -28,6 +28,7 @@
         </activity>
         <activity
             android:name="com.azurehorsecreations.photoalbum.presentation.ui.activities.PhotoActivity"
+            android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask" >
         </activity>
         <activity

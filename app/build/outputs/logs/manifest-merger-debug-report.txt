@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:2:1-29:12
+ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:2:11-55
 		INJECTED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.
 	android:name
 		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:5:5-28:19
+ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:5:5-29:19
 MERGED from [com.android.support:design:24.1.1] /Users/pattycase/.android/build-cache/02786419afeae6c7ebbd431d392ba0d0b9d1cedc/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:24.1.1] /Users/pattycase/.android/build-cache/151bb0a579ccad6671898394b7b53bdb9e2f1460/output/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:24.1.1] /Users/pattycase/.android/build-cache/8b7ccb609f5f54987f7b7f3a71ee5a78a684c4af/output/AndroidManifest.xml:22:5-20
@@ -55,17 +55,19 @@ ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.
 	android:name
 		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:17:27-74
 activity#com.azurehorsecreations.photoalbum.presentation.ui.activities.PhotoActivity
-ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:20:9-23:20
+ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:20:9-24:20
 	android:launchMode
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:22:13-44
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:23:13-44
+	android:configChanges
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:22:13-63
 	android:name
 		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:21:13-103
 activity#com.azurehorsecreations.photoalbum.presentation.ui.activities.PhotoDetailPagerActivity
-ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:24:9-27:20
+ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:25:9-28:20
 	android:parentActivityName
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:26:13-117
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:27:13-117
 	android:name
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:25:13-114
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:26:13-114
 uses-sdk
 INJECTED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:24.1.1] /Users/pattycase/.android/build-cache/02786419afeae6c7ebbd431d392ba0d0b9d1cedc/output/AndroidManifest.xml:20:5-43

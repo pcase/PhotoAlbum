@@ -144,6 +144,10 @@
         "source": "/Users/pattycase/.android/build-cache/151bb0a579ccad6671898394b7b53bdb9e2f1460/output/res/layout/notification_template_part_time.xml"
     },
     {
+        "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/layout/photo_row_layout_landscape.xml",
+        "source": "/Users/pattycase/Development/PhotoAlbum/app/src/main/res/layout/photo_row_layout_landscape.xml"
+    },
+    {
         "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
         "source": "/Users/pattycase/.android/build-cache/151bb0a579ccad6671898394b7b53bdb9e2f1460/output/res/layout/abc_list_menu_item_radio.xml"
     },
