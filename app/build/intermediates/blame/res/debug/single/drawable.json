@@ -92,6 +92,10 @@
         "source": "/Users/pattycase/.android/build-cache/02786419afeae6c7ebbd431d392ba0d0b9d1cedc/output/res/drawable/design_fab_background.xml"
     },
     {
+        "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/drawable/album.png",
+        "source": "/Users/pattycase/Development/PhotoAlbum/app/src/main/res/drawable/album.png"
+    },
+    {
         "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
         "source": "/Users/pattycase/.android/build-cache/151bb0a579ccad6671898394b7b53bdb9e2f1460/output/res/drawable/abc_cab_background_top_material.xml"
     },

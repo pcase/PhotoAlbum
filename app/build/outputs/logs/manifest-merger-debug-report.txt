@@ -33,7 +33,7 @@ MERGED from [com.jakewharton.timber:timber:4.1.0] /Users/pattycase/.android/buil
 	android:allowBackup
 		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:7:9-35
 	android:icon
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:8:9-39
 	android:theme
 		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:11:9-40
 	android:name

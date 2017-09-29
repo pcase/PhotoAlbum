@@ -5,6 +5,6 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/walmart"/>
+            android:src="@drawable/album"/>
     </item>
 </layer-list>
