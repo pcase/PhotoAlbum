@@ -696,6 +696,7 @@ int id image 0x7f0c0041
 int id image_view 0x7f0c0089
 int id info 0x7f0c0087
 int id item_touch_helper_previous_elevation 0x7f0c0005
+int id layout1 0x7f0c008a
 int id left 0x7f0c0027
 int id line1 0x7f0c0081
 int id line3 0x7f0c0085
@@ -767,7 +768,7 @@ int id touch_outside 0x7f0c0073
 int id up 0x7f0c0009
 int id useLogo 0x7f0c0014
 int id view_offset_helper 0x7f0c000a
-int id view_pager 0x7f0c008a
+int id view_pager 0x7f0c008b
 int id withText 0x7f0c0039
 int id wrap_content 0x7f0c0020
 int integer abc_config_activityDefaultDur 0x7f0a0001

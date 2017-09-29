@@ -7,7 +7,6 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.azurehorsecreations.photoalbum.R;
 import com.azurehorsecreations.photoalbum.data.repository.PhotoRepository;
@@ -116,6 +115,7 @@ public class PhotoActivity extends AppCompatActivity implements View, PhotoAdapt
 
     @Override
     public void displayPhotoInformation(List<PhotoMetadata> photos) {
+        photoMetadataList.clear();
         if (mAdapter != null && mAdapter.getItemCount() > 0) {
             for (int i = 0; i < mAdapter.getItemCount(); i++) {
                 photoMetadataList.add(mAdapter.getItem(i));

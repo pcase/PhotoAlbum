@@ -2657,6 +2657,7 @@ containing a value of this type.
         public static final int image_view=0x7f0c0089;
         public static final int info=0x7f0c0087;
         public static final int item_touch_helper_previous_elevation=0x7f0c0005;
+        public static final int layout1=0x7f0c008a;
         public static final int left=0x7f0c0027;
         public static final int line1=0x7f0c0081;
         public static final int line3=0x7f0c0085;
@@ -2728,7 +2729,7 @@ containing a value of this type.
         public static final int up=0x7f0c0009;
         public static final int useLogo=0x7f0c0014;
         public static final int view_offset_helper=0x7f0c000a;
-        public static final int view_pager=0x7f0c008a;
+        public static final int view_pager=0x7f0c008b;
         public static final int withText=0x7f0c0039;
         public static final int wrap_content=0x7f0c0020;
     }
