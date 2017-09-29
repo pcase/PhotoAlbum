@@ -47,7 +47,8 @@ public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.ViewHolder> 
         public void onBindViewHolder(ViewHolder viewHolder, int pos) {
             viewHolder.click(photoMetadatasList.get(pos), listener);
             viewHolder.photo_title.setText(photoMetadatasList.get(pos).getTitle());
-            Picasso.with(context).load(PhotoConstants.PHOTO_DOWNLOAD_URL + photoMetadatasList.get(pos).getFilename()).resize(120, 60).into(viewHolder.photo_image);
+            // Picasso.with(context).load(PhotoConstants.PHOTO_DOWNLOAD_URL + photoMetadatasList.get(pos).getFilename()).resize(120, 60).into(viewHolder.photo_image);
+            Picasso.with(context).load(PhotoConstants.PHOTO_DOWNLOAD_URL + photoMetadatasList.get(pos).getFilename()).resize(120, 0).into(viewHolder.photo_image);
         }
 
         @Override

@@ -30,10 +30,8 @@ import butterknife.ButterKnife;
 
 public class PhotoActivity extends AppCompatActivity implements View, PhotoAdapter.OnItemClickListener {
     private static final String TAG = "PhotoActivity";
-    private static final int NUMBER_OF_COLUMNS = 1;
     private boolean isPortrait = true;
     private GridLayoutManager gridLayoutManager;
-
     private EndlessRecyclerViewScrollListener mScrollListener;
 
     @Bind(R.id.message_view)
@@ -63,8 +61,8 @@ public class PhotoActivity extends AppCompatActivity implements View, PhotoAdapt
                 new PhotoRepository()
         );
 
+        setLayoutForOrientation(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT);
         mRecyclerView.addItemDecoration(new SimpleDividerItemDecoration(this));
-        setRecyclerGridLayout(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT);
         mScrollListener = new EndlessRecyclerViewScrollListener(gridLayoutManager) {
             @Override
             public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {
@@ -80,7 +78,7 @@ public class PhotoActivity extends AppCompatActivity implements View, PhotoAdapt
         mPresenter.resume();
     }
 
-    private void setRecyclerGridLayout(boolean isPortrait) {
+    private void setLayoutForOrientation(boolean isPortrait) {
         if (isPortrait) {
             gridLayoutManager = new GridLayoutManager(this, 1);
             mRecyclerView.setLayoutManager(gridLayoutManager);
@@ -89,32 +87,26 @@ public class PhotoActivity extends AppCompatActivity implements View, PhotoAdapt
             gridLayoutManager = new GridLayoutManager(this, 2);
             mRecyclerView.setLayoutManager(gridLayoutManager);
         }
+        mAdapter = new PhotoAdapter(this, (ArrayList<PhotoMetadata>) photoMetadataList, this, isPortrait);
+        mAdapter.notifyDataSetChanged();
+        mRecyclerView.setAdapter(mAdapter);
     }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            Toast.makeText(this, "landscape", Toast.LENGTH_SHORT).show();
-            isPortrait = false;
-        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
-            Toast.makeText(this, "portrait", Toast.LENGTH_SHORT).show();
-            isPortrait = true;
-        }
-        setRecyclerGridLayout(isPortrait);
+        isPortrait = newConfig.orientation == Configuration.ORIENTATION_PORTRAIT;
+        setLayoutForOrientation(isPortrait);
     }
 
     @Override
     public void showProgress() {
         mProgressBar.setVisibility(android.view.View.VISIBLE);
-//        Toast.makeText(this, R.string.retrieving, Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void hideProgress() {
         mProgressBar.setVisibility(android.view.View.INVISIBLE);
-//        Toast.makeText(this, R.string.retrieved, Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -125,19 +117,13 @@ public class PhotoActivity extends AppCompatActivity implements View, PhotoAdapt
     @Override
     public void displayPhotoInformation(List<PhotoMetadata> photos) {
         if (mAdapter != null && mAdapter.getItemCount() > 0) {
-            List<PhotoMetadata> currentList = new ArrayList<>();
             for (int i = 0; i < mAdapter.getItemCount(); i++) {
-                currentList.add(mAdapter.getItem(i));
+                photoMetadataList.add(mAdapter.getItem(i));
             }
-            currentList.addAll(photos);
-            mAdapter = new PhotoAdapter(this, (ArrayList<PhotoMetadata>) currentList, this, isPortrait);
-            mAdapter.notifyDataSetChanged();
-        } else {
-            List<PhotoMetadata> photoList = new ArrayList<>();
-            photoList.addAll(photos);
-            mAdapter = new PhotoAdapter(this, (ArrayList<PhotoMetadata>) photoList, this, isPortrait);
-            mAdapter.notifyDataSetChanged();
         }
+        photoMetadataList.addAll(photos);
+        mAdapter = new PhotoAdapter(this, (ArrayList<PhotoMetadata>) photoMetadataList, this, isPortrait);
+        mAdapter.notifyDataSetChanged();
         mRecyclerView.setAdapter(mAdapter);
     }
 
