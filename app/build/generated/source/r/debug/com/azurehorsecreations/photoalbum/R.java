@@ -2588,9 +2588,8 @@ containing a value of this type.
         public static final int design_snackbar_background=0x7f02004e;
         public static final int ic_launcher_round=0x7f02004f;
         public static final int line_divider=0x7f020050;
-        public static final int notification_template_icon_bg=0x7f020053;
+        public static final int notification_template_icon_bg=0x7f020052;
         public static final int splash_background=0x7f020051;
-        public static final int walmart=0x7f020052;
     }
     public static final class id {
         public static final int action0=0x7f0c007c;

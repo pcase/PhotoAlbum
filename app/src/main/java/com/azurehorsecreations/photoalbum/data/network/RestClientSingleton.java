@@ -1,5 +1,6 @@
 package com.azurehorsecreations.photoalbum.data.network;
 
+import android.support.annotation.VisibleForTesting;
 import android.util.Log;
 
 import com.azurehorsecreations.photoalbum.contants.PhotoConstants;
@@ -21,6 +22,7 @@ public class RestClientSingleton {
     private static RestClientSingleton instance;
     private IPhotoAPIService apiService;
 
+    @VisibleForTesting
     private RestClientSingleton() {
         final Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(PhotoConstants.PHOTO_BASE_URL)
@@ -40,4 +42,5 @@ public class RestClientSingleton {
     public Observable<List<PhotoMetadata>> getPhotoMetadata() {
         return apiService.fetchPhotoMetadata();
     }
+
 }

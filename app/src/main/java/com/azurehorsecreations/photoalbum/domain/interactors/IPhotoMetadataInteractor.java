@@ -11,7 +11,7 @@ import java.util.List;
 
 public interface IPhotoMetadataInteractor extends IInteractor {
     interface Callback {
-        void onPhotoDetailRetrieved(List<PhotoMetadata> photos);
+        void onPhotoMetadataRetrieved(List<PhotoMetadata> photos);
         void onRetrievalFailed(String error);
     }
 }

@@ -22,14 +22,15 @@ import io.reactivex.schedulers.Schedulers;
 public class PhotoMetadataInteractorImpl extends AbstractInteractor implements IPhotoMetadataInteractor {
 
     private Callback mCallback;
-    private PhotoRepository mProductRepository;
+    private PhotoRepository mPhotoRepository;
 
     public PhotoMetadataInteractorImpl(IExecutor threadExecutor,
                                        IMainThread mainThread,
-                                       Callback callback, PhotoRepository productRepository) {
+                                       Callback callback,
+                                       PhotoRepository photoRepository) {
         super(threadExecutor, mainThread);
         mCallback = callback;
-        mProductRepository = productRepository;
+        mPhotoRepository = photoRepository;
     }
 
     private void notifyError() {
@@ -45,14 +46,14 @@ public class PhotoMetadataInteractorImpl extends AbstractInteractor implements I
         mMainThread.post(new Runnable() {
             @Override
             public void run() {
-                mCallback.onPhotoDetailRetrieved(photos);
+                mCallback.onPhotoMetadataRetrieved(photos);
             }
         });
     }
 
     @Override
     public void run() {
-        mProductRepository.getPhotoMetadata()
+        mPhotoRepository.getPhotoMetadata()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<List<PhotoMetadata>>() {

@@ -1,6 +1,13 @@
 package com.azurehorsecreations.photoalbum.presentation.presenters.base;
 
+import com.azurehorsecreations.photoalbum.presentation.ui.IBaseView;
+import com.azurehorsecreations.photoalbum.presentation.ui.IPhotoView;
+
 public interface IBasePresenter {
+    void attachView(IBaseView view);
+
+    void detachView(IBaseView view);
+
     /**
      * Method that control the lifecycle of the view. It should be called in the view's
      * (Activity or Fragment) onResume() method.

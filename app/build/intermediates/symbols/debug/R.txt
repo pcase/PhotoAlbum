@@ -629,9 +629,8 @@ int drawable design_fab_background 0x7f02004d
 int drawable design_snackbar_background 0x7f02004e
 int drawable ic_launcher_round 0x7f02004f
 int drawable line_divider 0x7f020050
-int drawable notification_template_icon_bg 0x7f020053
+int drawable notification_template_icon_bg 0x7f020052
 int drawable splash_background 0x7f020051
-int drawable walmart 0x7f020052
 int id action0 0x7f0c007c
 int id action_bar 0x7f0c005d
 int id action_bar_activity_content 0x7f0c0000

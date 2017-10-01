@@ -16,9 +16,9 @@ import com.azurehorsecreations.photoalbum.presentation.MainThreadImpl;
 import com.azurehorsecreations.photoalbum.presentation.presenters.IPhotoMetadataPresenter;
 import com.azurehorsecreations.photoalbum.presentation.presenters.impl.PhotoMetadataPresenterImpl;
 import com.azurehorsecreations.photoalbum.presentation.ui.EndlessRecyclerViewScrollListener;
+import com.azurehorsecreations.photoalbum.presentation.ui.IPhotoView;
 import com.azurehorsecreations.photoalbum.presentation.ui.adapters.PhotoAdapter;
 import com.azurehorsecreations.photoalbum.presentation.ui.navigation.PhotoNavigator;
-import com.azurehorsecreations.photoalbum.presentation.presenters.IPhotoMetadataPresenter.View;
 import com.azurehorsecreations.photoalbum.presentation.ui.SimpleDividerItemDecoration;
 
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class PhotoActivity extends AppCompatActivity implements View, PhotoAdapter.OnItemClickListener {
+public class PhotoActivity extends AppCompatActivity implements IPhotoView, PhotoAdapter.OnItemClickListener {
     private static final String TAG = "PhotoActivity";
     private boolean isPortrait = true;
     private GridLayoutManager gridLayoutManager;
