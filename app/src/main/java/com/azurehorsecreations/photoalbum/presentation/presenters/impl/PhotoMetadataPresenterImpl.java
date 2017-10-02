@@ -20,6 +20,10 @@ public class PhotoMetadataPresenterImpl implements IPhotoMetadataPresenter,
         mInteractor = new PhotoMetadataInteractorImpl(this);
     }
 
+    public PhotoMetadataPresenterImpl(PhotoMetadataInteractorImpl interactor) {
+        mInteractor = interactor;
+    }
+
     @Override
     public void loadPhotos() {
         mView.showProgress();

@@ -32,6 +32,13 @@ public class PhotoMetadataInteractorImpl extends AbstractInteractor implements I
         mPhotoRepository = new PhotoRepository();
     }
 
+    public PhotoMetadataInteractorImpl(IExecutor executor, IMainThread mainThread,
+                                       Callback callback, PhotoRepository repository) {
+        super(executor, mainThread);
+        mCallback = callback;
+        mPhotoRepository = repository;
+    }
+
     private void notifyError() {
         mMainThread.post(new Runnable() {
             @Override
@@ -40,7 +47,6 @@ public class PhotoMetadataInteractorImpl extends AbstractInteractor implements I
             }
         });
     }
-
 
     public void postMessage(final List<PhotoMetadata> photos) {
         mMainThread.post(new Runnable() {
