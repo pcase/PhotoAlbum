@@ -136,6 +136,10 @@
         "source": "/Users/pattycase/.android/build-cache/02786419afeae6c7ebbd431d392ba0d0b9d1cedc/output/res/layout/design_bottom_sheet_dialog.xml"
     },
     {
+        "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/layout/content_photo_detail_copy.xml",
+        "source": "/Users/pattycase/Development/PhotoAlbum/app/src/main/res/layout/content_photo_detail_copy.xml"
+    },
+    {
         "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/layout/view_pager.xml",
         "source": "/Users/pattycase/Development/PhotoAlbum/app/src/main/res/layout/view_pager.xml"
     },
@@ -194,10 +198,6 @@
     {
         "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
         "source": "/Users/pattycase/.android/build-cache/02786419afeae6c7ebbd431d392ba0d0b9d1cedc/output/res/layout/design_layout_tab_text.xml"
-    },
-    {
-        "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/layout/photo_detail_row_item.xml",
-        "source": "/Users/pattycase/Development/PhotoAlbum/app/src/main/res/layout/photo_detail_row_item.xml"
     },
     {
         "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
