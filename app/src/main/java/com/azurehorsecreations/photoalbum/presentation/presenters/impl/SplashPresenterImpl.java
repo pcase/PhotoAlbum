@@ -1,7 +1,6 @@
 package com.azurehorsecreations.photoalbum.presentation.presenters.impl;
 
 import com.azurehorsecreations.photoalbum.presentation.presenters.ISplashPresenter;
-import com.azurehorsecreations.photoalbum.presentation.ui.IBaseView;
 import com.azurehorsecreations.photoalbum.presentation.ui.navigation.INavigator;
 
 /**
@@ -10,37 +9,6 @@ import com.azurehorsecreations.photoalbum.presentation.ui.navigation.INavigator;
 
 public class SplashPresenterImpl implements ISplashPresenter {
     private INavigator mNavigator;
-
-    @Override
-    public void attachView(IBaseView view) {
-
-    }
-
-    @Override
-    public void detachView(IBaseView view) {
-
-    }
-
-    @Override
-    public void resume() {
-    }
-
-    @Override
-    public void pause() {
-    }
-
-    @Override
-    public void stop() {
-    }
-
-    @Override
-    public void destroy() {
-    }
-
-    @Override
-    public void onError(String message) {
-
-    }
 
     @Override
     public void setNavigator(INavigator navigator) {

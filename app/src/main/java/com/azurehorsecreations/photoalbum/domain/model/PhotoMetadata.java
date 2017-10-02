@@ -9,7 +9,8 @@ import com.google.gson.annotations.SerializedName;
  * Photo class represents the photo model
  */
 
-public class PhotoMetadata implements Parcelable {
+public class
+PhotoMetadata implements Parcelable {
     public PhotoMetadata() {}
 
     public PhotoMetadata(Parcel in) {

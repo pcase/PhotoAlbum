@@ -3,9 +3,11 @@ package com.azurehorsecreations.photoalbum.domain.interactors.impl;
 import com.azurehorsecreations.photoalbum.data.repository.PhotoRepository;
 import com.azurehorsecreations.photoalbum.domain.executor.IExecutor;
 import com.azurehorsecreations.photoalbum.domain.executor.IMainThread;
+import com.azurehorsecreations.photoalbum.domain.executor.impl.ThreadExecutor;
 import com.azurehorsecreations.photoalbum.domain.interactors.IPhotoMetadataInteractor;
 import com.azurehorsecreations.photoalbum.domain.interactors.base.AbstractInteractor;
 import com.azurehorsecreations.photoalbum.domain.model.PhotoMetadata;
+import com.azurehorsecreations.photoalbum.presentation.MainThreadImpl;
 
 import java.util.List;
 
@@ -24,13 +26,10 @@ public class PhotoMetadataInteractorImpl extends AbstractInteractor implements I
     private Callback mCallback;
     private PhotoRepository mPhotoRepository;
 
-    public PhotoMetadataInteractorImpl(IExecutor threadExecutor,
-                                       IMainThread mainThread,
-                                       Callback callback,
-                                       PhotoRepository photoRepository) {
-        super(threadExecutor, mainThread);
+    public PhotoMetadataInteractorImpl(Callback callback) {
+        super(ThreadExecutor.getInstance(), MainThreadImpl.getInstance());
         mCallback = callback;
-        mPhotoRepository = photoRepository;
+        mPhotoRepository = new PhotoRepository();
     }
 
     private void notifyError() {
@@ -42,7 +41,8 @@ public class PhotoMetadataInteractorImpl extends AbstractInteractor implements I
         });
     }
 
-    private void postMessage(final List<PhotoMetadata> photos) {
+
+    public void postMessage(final List<PhotoMetadata> photos) {
         mMainThread.post(new Runnable() {
             @Override
             public void run() {

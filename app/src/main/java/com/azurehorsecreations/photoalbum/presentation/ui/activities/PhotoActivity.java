@@ -9,10 +9,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.azurehorsecreations.photoalbum.R;
-import com.azurehorsecreations.photoalbum.data.repository.PhotoRepository;
-import com.azurehorsecreations.photoalbum.domain.executor.impl.ThreadExecutor;
 import com.azurehorsecreations.photoalbum.domain.model.PhotoMetadata;
-import com.azurehorsecreations.photoalbum.presentation.MainThreadImpl;
 import com.azurehorsecreations.photoalbum.presentation.presenters.IPhotoMetadataPresenter;
 import com.azurehorsecreations.photoalbum.presentation.presenters.impl.PhotoMetadataPresenterImpl;
 import com.azurehorsecreations.photoalbum.presentation.ui.EndlessRecyclerViewScrollListener;
@@ -52,20 +49,14 @@ public class PhotoActivity extends AppCompatActivity implements IPhotoView, Phot
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
-        mPresenter = new PhotoMetadataPresenterImpl(
-                ThreadExecutor.getInstance(),
-                MainThreadImpl.getInstance(),
-                this,
-                new PhotoRepository()
-        );
-
+        mPresenter = new PhotoMetadataPresenterImpl();
+        mPresenter.attachView(this);
         setLayoutForOrientation(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT);
         mRecyclerView.addItemDecoration(new SimpleDividerItemDecoration(this));
         mScrollListener = new EndlessRecyclerViewScrollListener(gridLayoutManager) {
             @Override
             public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {
-                mPresenter.resume();
+                mPresenter.loadPhotos();
             }
         };
         mRecyclerView.addOnScrollListener(mScrollListener);
@@ -74,7 +65,7 @@ public class PhotoActivity extends AppCompatActivity implements IPhotoView, Phot
     @Override
     protected void onResume() {
         super.onResume();
-        mPresenter.resume();
+        mPresenter.loadPhotos();
     }
 
     private void setLayoutForOrientation(boolean isPortrait) {

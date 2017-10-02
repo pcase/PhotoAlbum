@@ -16,14 +16,20 @@ import com.azurehorsecreations.photoalbum.presentation.MainThreadImpl;
 import com.azurehorsecreations.photoalbum.presentation.presenters.IPhotoMetadataPresenter;
 import com.azurehorsecreations.photoalbum.presentation.presenters.impl.PhotoMetadataPresenterImpl;
 import com.azurehorsecreations.photoalbum.presentation.ui.IPhotoView;
+import com.azurehorsecreations.photoalbum.presentation.ui.activities.PhotoActivity;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 import org.junit.runners.parameterized.TestWithParameters;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
+import org.mockito.invocation.InvocationOnMock;
+import org.mockito.stubbing.Answer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,15 +48,19 @@ import io.reactivex.subscribers.TestSubscriber;
 
 import static android.R.attr.dependency;
 import static android.R.attr.description;
+import static android.R.attr.icon;
 import static android.R.attr.maxItemsPerRow;
 import static android.R.attr.textAppearanceSearchResultTitle;
 import static android.R.attr.textOff;
+import static android.os.Build.USER;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.atLeastOnce;
 import static org.mockito.Mockito.doCallRealMethod;
 import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -72,6 +82,9 @@ public class GetPhotoTest {
 
     @Mock
     private IPhotoMetadataInteractor.Callback mCallback;
+
+    @Mock
+    private PhotoMetadataPresenterImpl mPresenter;
 
     @Mock
     PhotoMetadataInteractorImpl mPhotoMetadataInteractor;
@@ -113,29 +126,55 @@ public class GetPhotoTest {
         mMainThread = new TestMainThread();
     }
 
-    // Test the Interactor
+    // Test that the Interactor gets photos
 
     @Test
     public void testInteractorCallsbackonPhotoMetadataReceived() throws Exception {
+//        // Setup
+//        List<PhotoMetadata> list = getPhotoMetadataList();
+//        final Observable<List<PhotoMetadata>> observable = Observable.just(list);
+//        when(mRepository.getPhotoMetadata())
+//                .thenReturn(observable);
+//        PhotoMetadataInteractorImpl interactor = new PhotoMetadataInteractorImpl(mPresenter);
+//
+//        // Test
+//        interactor.run();
+//
+//        // Verify
+//        Mockito.verify(mRepository).getPhotoMetadata();
+//        Mockito.verifyNoMoreInteractions(mRepository);
+//        Mockito.verify(mCallback).onPhotoMetadataRetrieved(list);
+        PhotoMetadataInteractorImpl interactor = new PhotoMetadataInteractorImpl(mPresenter);
+        interactor.run();
+    }
+
+    // Test that the Presenter gets the photos from the model and sends the photos to the view
+    @Test
+    public void testPresenterSendsPhotosToTheView() throws Exception {
         // Setup
         List<PhotoMetadata> list = getPhotoMetadataList();
         final Observable<List<PhotoMetadata>> observable = Observable.just(list);
+        PhotoMetadataPresenterImpl presenter = new PhotoMetadataPresenterImpl();
+
         when(mRepository.getPhotoMetadata())
                 .thenReturn(observable);
-        PhotoMetadataInteractorImpl interactor = new PhotoMetadataInteractorImpl(
-                mExecutor,
-                mMainThread,
-                mCallback,
-                mRepository
-        );
+
+        Mockito.doAnswer(new Answer() {
+            @Override
+            public Object answer(InvocationOnMock invocationOnMock) throws Throwable {
+                presenter.onPhotoMetadataRetrieved(list);
+                return null;
+            }
+        }).when(mPhotoMetadataInteractor).execute();
+        doNothing().when(mView).showProgress();
+        presenter.attachView(mView);
 
         // Test
-        interactor.run();
+        presenter.loadPhotos();
 
         // Verify
-        Mockito.verify(mRepository).getPhotoMetadata();
-        Mockito.verifyNoMoreInteractions(mRepository);
-        Mockito.verify(mCallback).onPhotoMetadataRetrieved(list);
+//        Mockito.verify(mPhotoMetadataInteractor).execute();
+        Mockito.verify(mView).displayPhotoInformation(list);
     }
 
     private List<PhotoMetadata> getPhotoMetadataList() {

@@ -1,4 +1,4 @@
-#Sun Oct 01 15:58:27 PDT 2017
+#Sun Oct 01 22:26:19 PDT 2017
 base.0=/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_073aeee8e101ee73acd6aa49211497b7062756fb
 renamed.1=classes.dex
 renamed.0=classes2.dex

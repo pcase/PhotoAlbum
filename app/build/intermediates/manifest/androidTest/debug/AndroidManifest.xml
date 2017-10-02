@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.azurehorsecreations.shopper.test">
+    package="com.azurehorsecreations.shopper.test" >
 
-    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="24" />
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="24" />
+
+    <instrumentation
+        android:name="android.support.test.runner.AndroidJUnitRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for com.azurehorsecreations.shopper"
+        android:targetPackage="com.azurehorsecreations.shopper" />
 
     <application>
         <uses-library android:name="android.test.runner" />
     </application>
 
-    <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.azurehorsecreations.shopper"
-                     android:handleProfiling="false"
-                     android:functionalTest="false"
-                     android:label="Tests for com.azurehorsecreations.shopper"/>
 </manifest>

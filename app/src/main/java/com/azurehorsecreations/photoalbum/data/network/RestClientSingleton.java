@@ -1,8 +1,5 @@
 package com.azurehorsecreations.photoalbum.data.network;
 
-import android.support.annotation.VisibleForTesting;
-import android.util.Log;
-
 import com.azurehorsecreations.photoalbum.contants.PhotoConstants;
 import com.azurehorsecreations.photoalbum.domain.model.PhotoMetadata;
 
@@ -22,7 +19,6 @@ public class RestClientSingleton {
     private static RestClientSingleton instance;
     private IPhotoAPIService apiService;
 
-    @VisibleForTesting
     private RestClientSingleton() {
         final Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(PhotoConstants.PHOTO_BASE_URL)
