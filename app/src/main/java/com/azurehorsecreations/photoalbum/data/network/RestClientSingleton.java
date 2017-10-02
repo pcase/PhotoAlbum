@@ -12,7 +12,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 
 /**
- * Created by pattycase on 9/18/17.
+ * RestClientSingleton
+ * Creates the Retrofit client
  */
 
 public class RestClientSingleton {

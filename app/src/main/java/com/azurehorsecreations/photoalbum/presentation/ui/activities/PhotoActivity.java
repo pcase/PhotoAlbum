@@ -16,7 +16,6 @@ import com.azurehorsecreations.photoalbum.presentation.ui.EndlessRecyclerViewScr
 import com.azurehorsecreations.photoalbum.presentation.ui.IPhotoView;
 import com.azurehorsecreations.photoalbum.presentation.ui.adapters.PhotoAdapter;
 import com.azurehorsecreations.photoalbum.presentation.ui.navigation.PhotoNavigator;
-import com.azurehorsecreations.photoalbum.presentation.ui.SimpleDividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +23,11 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
+/**
+ * PhotoActivity
+ * Gets and displays photos. Displays photos in a list in portrait orientation and displays photos
+ * in a grid in landscape orientation
+ */
 public class PhotoActivity extends AppCompatActivity implements IPhotoView, PhotoAdapter.OnItemClickListener {
     private static final String TAG = "PhotoActivity";
     private boolean isPortrait = true;
@@ -52,7 +56,6 @@ public class PhotoActivity extends AppCompatActivity implements IPhotoView, Phot
         mPresenter = new PhotoMetadataPresenterImpl();
         mPresenter.attachView(this);
         setLayoutForOrientation(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT);
-        mRecyclerView.addItemDecoration(new SimpleDividerItemDecoration(this));
         mScrollListener = new EndlessRecyclerViewScrollListener(gridLayoutManager) {
             @Override
             public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {

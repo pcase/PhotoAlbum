@@ -1,8 +1,9 @@
 package com.azurehorsecreations.photoalbum.utils;
 
-/*
- * CallbackReceiver interface for callbacks to handle data
- */
+/**
+ * CallbackReceiver
+ * Interface for callbacks to handle data
+ **/
 
 public interface CallbackReceiver {
     public void handleResultData(Object result);

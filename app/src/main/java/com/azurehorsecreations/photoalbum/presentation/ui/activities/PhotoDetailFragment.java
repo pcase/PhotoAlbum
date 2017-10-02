@@ -1,11 +1,7 @@
 package com.azurehorsecreations.photoalbum.presentation.ui.activities;
 
-import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.support.v4.app.Fragment;
-import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,14 +10,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.azurehorsecreations.photoalbum.R;
 import com.azurehorsecreations.photoalbum.domain.model.PhotoMetadata;
-import com.azurehorsecreations.photoalbum.utils.ImageDownloader;
-
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-/*
- * ProductDetailFragment is a fragment for the product detail page
- */
+/**
+ * ProductDetailFragment
+ * Fragment for the product detail page. Displays photo, title and description.
+ **/
 
 public class PhotoDetailFragment extends Fragment {
     private static final String TAG = "PhotoDetailFrag";
@@ -33,11 +28,15 @@ public class PhotoDetailFragment extends Fragment {
     @Bind(R.id.description_text)
     TextView description;
 
+    @Bind(R.id.photo_image)
+    ImageView image;
+
     public static PhotoDetailFragment newInstance(PhotoMetadata photo) {
         PhotoDetailFragment fragmentFirst = new PhotoDetailFragment();
         Bundle args = new Bundle();
         args.putString("title", photo.getTitle());
         args.putString("description", photo.getDescription());
+        args.putParcelable("image", photo.getImage());
         fragmentFirst.setArguments(args);
         return fragmentFirst;
     }
@@ -48,6 +47,7 @@ public class PhotoDetailFragment extends Fragment {
         photo = new PhotoMetadata();
         photo.setTitle(getArguments().getString("title", ""));
         photo.setDescription(getArguments().getString("description", ""));
+        photo.setImage(getArguments().getParcelable("image"));
     }
 
     @Override
@@ -58,28 +58,16 @@ public class PhotoDetailFragment extends Fragment {
         ButterKnife.bind(this, view);
 
         if (photo.getTitle() != null) {
-            title.setText((Html.fromHtml(photo.getTitle())));
+            title.setText(photo.getTitle());
         }
 
         if (photo.getDescription() != null) {
-            description.setText(Html.fromHtml(photo.getDescription()));
+            description.setText(photo.getDescription());
         }
 
-
-//        loadImage(productImage, product.getProductImage());
+        if (photo.getImage() != null) {
+            image.setImageBitmap(photo.getImage());
+        }
         return view;
-    }
-
-    private void loadImage(final ImageView bmImage, String url) {
-        Handler handler = new Handler() {
-            @Override
-            public void handleMessage(Message msg) {
-                Bitmap bitmap = (Bitmap) msg.obj;
-                bmImage.setImageBitmap(bitmap);
-            }
-        };
-
-        ImageDownloader imageDownloader = new ImageDownloader();
-        imageDownloader.loadImage(url, handler);
     }
 }

@@ -16,9 +16,10 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-/*
- * ProductDetailPagerActivity displays the product details in a swipeable viewer
- */
+/**
+ * ProductDetailPagerActivity di
+ * Displays the photo details in a swipeable viewer
+ **/
 
 public class PhotoDetailPagerActivity extends AppCompatActivity {
     private static final String PHOTO = "PHOTO";

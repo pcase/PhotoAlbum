@@ -9,7 +9,8 @@ import java.util.List;
 import io.reactivex.Observable;
 
 /**
- * Created by pattycase on 9/9/17.
+ * PhotoRepository
+ * Provides access to the photos
  */
 
 public class PhotoRepository implements IPhotoRepository {

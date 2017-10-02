@@ -6,7 +6,8 @@ import com.azurehorsecreations.photoalbum.domain.model.PhotoMetadata;
 import java.util.List;
 
 /**
- * Created by pattycase on 9/9/17.
+ * IPhotoMetadataInteractor
+ * Interface for interactors that retrieve photos
  */
 
 public interface IPhotoMetadataInteractor extends IInteractor {

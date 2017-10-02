@@ -9,6 +9,11 @@ import com.azurehorsecreations.photoalbum.presentation.ui.navigation.INavigator;
 
 import java.util.List;
 
+/**
+ * PhotoMetadataPresenterImpl
+ * Presenter that retrieves photos and sends them to the view
+ **/
+
 public class PhotoMetadataPresenterImpl implements IPhotoMetadataPresenter,
         IPhotoMetadataInteractor.Callback {
 

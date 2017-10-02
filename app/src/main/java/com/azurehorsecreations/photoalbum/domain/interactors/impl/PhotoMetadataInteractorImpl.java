@@ -18,8 +18,8 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * This is an interactor boilerplate with a reference to a model repository.
- * <p/>
+ * PhotoMetadataInteractorImpl
+ * This interactor gets the photos from the repository and returns the results via a callback
  */
 public class PhotoMetadataInteractorImpl extends AbstractInteractor implements IPhotoMetadataInteractor {
 

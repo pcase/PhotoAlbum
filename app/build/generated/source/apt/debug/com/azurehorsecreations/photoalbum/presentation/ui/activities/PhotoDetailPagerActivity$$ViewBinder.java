@@ -8,8 +8,8 @@ import butterknife.ButterKnife.ViewBinder;
 public class PhotoDetailPagerActivity$$ViewBinder<T extends com.azurehorsecreations.photoalbum.presentation.ui.activities.PhotoDetailPagerActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131493003, "field 'viewPager'");
-    target.viewPager = finder.castView(view, 2131493003, "field 'viewPager'");
+    view = finder.findRequiredView(source, 2131558539, "field 'viewPager'");
+    target.viewPager = finder.castView(view, 2131558539, "field 'viewPager'");
   }
 
   @Override public void unbind(T target) {

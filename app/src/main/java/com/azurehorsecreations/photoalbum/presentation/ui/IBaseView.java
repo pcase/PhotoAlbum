@@ -1,9 +1,8 @@
 package com.azurehorsecreations.photoalbum.presentation.ui;
 
 /**
- * <p>
+ * IBaseView
  * This interface represents a basic view. All views should implement these common methods.
- * </p>
  */
 public interface IBaseView {
 

@@ -7,7 +7,8 @@ import java.util.List;
 import io.reactivex.Observable;
 
 /**
- * Created by pattycase on 9/9/17.
+ * IPhotoRepository
+ * Interface for the photo repository
  */
 
 public interface IPhotoRepository {

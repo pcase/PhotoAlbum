@@ -7,9 +7,10 @@ import com.azurehorsecreations.photoalbum.presentation.presenters.ISplashPresent
 import com.azurehorsecreations.photoalbum.presentation.presenters.impl.SplashPresenterImpl;
 import com.azurehorsecreations.photoalbum.presentation.ui.navigation.SplashNavigator;
 
-/*
- * SplashActivity displays the splash screen
- */
+/**
+ * SplashActivity d
+ * Displays the splash screen
+ **/
 
 public class SplashActivity extends AppCompatActivity {
     protected ISplashPresenter mPresenter;

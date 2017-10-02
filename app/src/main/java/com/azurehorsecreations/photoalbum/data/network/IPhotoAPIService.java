@@ -10,7 +10,8 @@ import retrofit2.http.GET;
 
 
 /**
- * Created by pattycase on 9/9/17.
+ * IPhotoAPIService
+ * Defines the API endpoints
  */
 
 public interface IPhotoAPIService {

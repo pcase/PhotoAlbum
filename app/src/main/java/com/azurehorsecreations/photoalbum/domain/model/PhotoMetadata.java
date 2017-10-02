@@ -1,12 +1,13 @@
 package com.azurehorsecreations.photoalbum.domain.model;
 
+import android.graphics.Bitmap;
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
 
 /*
- * Photo class represents the photo model
+ * PhotoMetadata class represents the photo model
  */
 
 public class
@@ -17,6 +18,7 @@ PhotoMetadata implements Parcelable {
         title = in.readString();
         description = in.readString();
         filename = in.readString();
+        image = in.readParcelable(Bitmap.class.getClassLoader());
     }
 
     public static final Creator<PhotoMetadata> CREATOR = new Creator<PhotoMetadata>() {
@@ -39,6 +41,9 @@ PhotoMetadata implements Parcelable {
 
     @SerializedName("filename")
     public String filename;
+
+    @SerializedName("image")
+    public Bitmap image;
 
     public String getTitle() {
         return title;
@@ -64,6 +69,13 @@ PhotoMetadata implements Parcelable {
         this.filename = filename;
     }
 
+    public Bitmap getImage() {
+        return image;
+    }
+    public void setImage(Bitmap image) {
+        this.image = image;
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -74,5 +86,6 @@ PhotoMetadata implements Parcelable {
         parcel.writeString(title);
         parcel.writeString(description);
         parcel.writeString(filename);
+        parcel.writeParcelable(getImage(), PARCELABLE_WRITE_RETURN_VALUE);
     }
 }

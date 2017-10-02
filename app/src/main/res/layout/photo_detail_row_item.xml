@@ -17,18 +17,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="@dimen/padding"
-        android:paddingRight="@dimen/padding"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
         android:textStyle="bold"
         android:text="Title:"/>
 
     <TextView
         android:id="@+id/title_text"
-        android:layout_gravity="left"
-        android:textColor="#000000"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
 
     <TableRow
         android:layout_width="match_parent"
@@ -39,18 +40,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="@dimen/padding"
-        android:paddingRight="@dimen/padding"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
         android:textStyle="bold"
         android:text="Description:"/>
 
     <TextView
         android:id="@+id/description_text"
-        android:layout_gravity="left"
-        android:textColor="#000000"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
 
     <TableRow
         android:layout_width="match_parent"

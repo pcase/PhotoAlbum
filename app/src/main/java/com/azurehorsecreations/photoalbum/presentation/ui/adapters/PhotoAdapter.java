@@ -1,22 +1,24 @@
 package com.azurehorsecreations.photoalbum.presentation.ui.adapters;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.azurehorsecreations.photoalbum.contants.PhotoConstants;
 import com.azurehorsecreations.photoalbum.domain.model.PhotoMetadata;
 import com.azurehorsecreations.photoalbum.R;
 import com.squareup.picasso.Picasso;
-
+import com.squareup.picasso.Target;
 import java.util.ArrayList;
 
 /**
- * Created by pattycase on 9/27/17.
+ * PhotoAdapter
+ * Renders a photo item
  */
 
 public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.ViewHolder> {
@@ -47,8 +49,23 @@ public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.ViewHolder> 
         public void onBindViewHolder(ViewHolder viewHolder, int pos) {
             viewHolder.click(photoMetadatasList.get(pos), listener);
             viewHolder.photo_title.setText(photoMetadatasList.get(pos).getTitle());
-            // Picasso.with(context).load(PhotoConstants.PHOTO_DOWNLOAD_URL + photoMetadatasList.get(pos).getFilename()).resize(120, 60).into(viewHolder.photo_image);
-            Picasso.with(context).load(PhotoConstants.PHOTO_DOWNLOAD_URL + photoMetadatasList.get(pos).getFilename()).resize(120, 0).into(viewHolder.photo_image);
+            Picasso.with(context).load(PhotoConstants.PHOTO_DOWNLOAD_URL + photoMetadatasList.get(pos)
+                    .getFilename()).resize(PhotoConstants.PHOTO_RESIZE_WIDTH, 0)
+                    .into(new Target() {
+                        @Override
+                        public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                            photoMetadatasList.get(pos).setImage(bitmap);
+                            viewHolder.photo_image.setImageBitmap(bitmap);
+                        }
+
+                        @Override
+                        public void onBitmapFailed(Drawable errorDrawable) {
+                        }
+
+                        @Override
+                        public void onPrepareLoad(Drawable placeHolderDrawable) {
+                        }
+                    });
         }
 
         @Override

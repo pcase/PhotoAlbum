@@ -4,7 +4,8 @@ import com.azurehorsecreations.photoalbum.presentation.presenters.ISplashPresent
 import com.azurehorsecreations.photoalbum.presentation.ui.navigation.INavigator;
 
 /**
- * Created by pattycase on 9/16/17.
+ * SplashPresenterImpl
+ * Presenter for displaying the splash screen
  */
 
 public class SplashPresenterImpl implements ISplashPresenter {

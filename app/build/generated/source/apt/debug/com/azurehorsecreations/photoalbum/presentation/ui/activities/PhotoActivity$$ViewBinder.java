@@ -8,12 +8,12 @@ import butterknife.ButterKnife.ViewBinder;
 public class PhotoActivity$$ViewBinder<T extends com.azurehorsecreations.photoalbum.presentation.ui.activities.PhotoActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131492973, "field 'mMessageTextView'");
-    target.mMessageTextView = finder.castView(view, 2131492973, "field 'mMessageTextView'");
-    view = finder.findRequiredView(source, 2131492972, "field 'mRecyclerView'");
-    target.mRecyclerView = finder.castView(view, 2131492972, "field 'mRecyclerView'");
-    view = finder.findRequiredView(source, 2131492974, "field 'mProgressBar'");
-    target.mProgressBar = finder.castView(view, 2131492974, "field 'mProgressBar'");
+    view = finder.findRequiredView(source, 2131558509, "field 'mMessageTextView'");
+    target.mMessageTextView = finder.castView(view, 2131558509, "field 'mMessageTextView'");
+    view = finder.findRequiredView(source, 2131558508, "field 'mRecyclerView'");
+    target.mRecyclerView = finder.castView(view, 2131558508, "field 'mRecyclerView'");
+    view = finder.findRequiredView(source, 2131558510, "field 'mProgressBar'");
+    target.mProgressBar = finder.castView(view, 2131558510, "field 'mProgressBar'");
   }
 
   @Override public void unbind(T target) {

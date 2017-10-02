@@ -6,7 +6,8 @@ import android.os.Looper;
 import com.azurehorsecreations.photoalbum.domain.executor.IMainThread;
 
 /**
- * This class makes sure that the runnable we provide will be run on the main UI thread.
+ * MainThreadImpl
+ * Makes sure that the runnable we provide will be run on the main UI thread.
  */
 public class MainThreadImpl implements IMainThread {
 
