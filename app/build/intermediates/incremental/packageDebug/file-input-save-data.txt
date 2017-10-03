@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Oct 02 16:36:25 PDT 2017
+#Mon Oct 02 17:43:41 PDT 2017
 14.set=ANDROID_RESOURCE
 180.file=/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_fade_out.xml
 118.set=ANDROID_RESOURCE

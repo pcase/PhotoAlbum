@@ -6,7 +6,7 @@
     density="560dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1506987384422"
+    timestamp="1506991420116"
     token="7987935724005892647"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -29,34 +29,28 @@
 
     <build
         build-mode="FULL"
-        timestamp="1506986229963"
+        timestamp="1506991225611"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
             location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/pattycase/Development/PhotoAlbum/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
+        <artifact
+            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
@@ -65,26 +59,18 @@
             location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/pattycase/Development/PhotoAlbum/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1506987251079"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1506987384422"
+        timestamp="1506991420116"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/pattycase/Development/PhotoAlbum/app/build/outputs/apk/app-debug.apk"
