@@ -1,6 +1,7 @@
 package com.azurehorsecreations.photoalbum.data.repository;
 
-import com.azurehorsecreations.photoalbum.data.network.RestClientSingleton;
+import com.azurehorsecreations.photoalbum.data.network.IPhotoAPI;
+import com.azurehorsecreations.photoalbum.data.network.RestPhotoClient;
 import com.azurehorsecreations.photoalbum.domain.model.PhotoMetadata;
 import com.azurehorsecreations.photoalbum.domain.repository.IPhotoRepository;
 
@@ -10,7 +11,7 @@ import io.reactivex.Observable;
 
 /**
  * PhotoRepository
- * Provides access to the photos
+ * Gets the photos and returns an RxJava Observable list of photos
  */
 
 public class PhotoRepository implements IPhotoRepository {
@@ -18,6 +19,7 @@ public class PhotoRepository implements IPhotoRepository {
 
     @Override
     public Observable<List<PhotoMetadata>> getPhotoMetadata() {
-        return Observable.defer(() -> RestClientSingleton.getInstance().getPhotoMetadata());
+        return Observable.defer(() -> RestPhotoClient.getInstance().create(IPhotoAPI.class).fetchPhotoMetadata());
+//        return Observable.defer(() -> PhotoWebService.getPhotoWebService(ApplicationContextProvider.getContext()).create(IPhotoAPI.class).fetchPhotoMetadata());
     }
 }

@@ -16,6 +16,7 @@ import com.azurehorsecreations.photoalbum.presentation.ui.EndlessRecyclerViewScr
 import com.azurehorsecreations.photoalbum.presentation.ui.IPhotoView;
 import com.azurehorsecreations.photoalbum.presentation.ui.adapters.PhotoAdapter;
 import com.azurehorsecreations.photoalbum.presentation.ui.navigation.PhotoNavigator;
+import com.azurehorsecreations.photoalbum.utils.NetworkConnectivityChecker;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,7 +69,12 @@ public class PhotoActivity extends AppCompatActivity implements IPhotoView, Phot
     @Override
     protected void onResume() {
         super.onResume();
-        mPresenter.loadPhotos();
+        mMessageTextView.setText("");
+        if (NetworkConnectivityChecker.isConnected(this)) {
+            mPresenter.loadPhotos();
+        } else {
+            showError("It looks like your network connection is turned off. Please turn it on, and try again.");
+        }
     }
 
     private void setLayoutForOrientation(boolean isPortrait) {

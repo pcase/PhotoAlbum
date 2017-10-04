@@ -71,12 +71,10 @@ public class PhotoMetadataInteractorImpl extends AbstractInteractor implements I
 
                     @Override
                     public void onComplete() {
-
                     }
 
                     @Override
                     public void onSubscribe(@NonNull Disposable d) {
-
                     }
 
                     @Override

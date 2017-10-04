@@ -1,30 +1,17 @@
 package com.azurehorsecreations.photoalbum;
 
-import android.provider.ContactsContract;
-
-import com.azurehorsecreations.photoalbum.data.network.IPhotoAPIService;
-import com.azurehorsecreations.photoalbum.data.network.RestClientSingleton;
 import com.azurehorsecreations.photoalbum.data.repository.PhotoRepository;
 import com.azurehorsecreations.photoalbum.domain.executor.IExecutor;
 import com.azurehorsecreations.photoalbum.domain.executor.IMainThread;
-import com.azurehorsecreations.photoalbum.domain.executor.impl.ThreadExecutor;
 import com.azurehorsecreations.photoalbum.domain.interactors.IPhotoMetadataInteractor;
 import com.azurehorsecreations.photoalbum.domain.interactors.impl.PhotoMetadataInteractorImpl;
 import com.azurehorsecreations.photoalbum.domain.model.PhotoMetadata;
-import com.azurehorsecreations.photoalbum.domain.repository.IPhotoRepository;
-import com.azurehorsecreations.photoalbum.presentation.MainThreadImpl;
-import com.azurehorsecreations.photoalbum.presentation.presenters.IPhotoMetadataPresenter;
 import com.azurehorsecreations.photoalbum.presentation.presenters.impl.PhotoMetadataPresenterImpl;
 import com.azurehorsecreations.photoalbum.presentation.ui.IPhotoView;
-import com.azurehorsecreations.photoalbum.presentation.ui.activities.PhotoActivity;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
-import org.junit.runners.parameterized.TestWithParameters;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
@@ -41,28 +28,14 @@ import io.reactivex.android.plugins.RxAndroidPlugins;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.internal.schedulers.ExecutorScheduler;
-import io.reactivex.observers.TestObserver;
 import io.reactivex.plugins.RxJavaPlugins;
-import io.reactivex.schedulers.Schedulers;
-import io.reactivex.subscribers.TestSubscriber;
 
-import static android.R.attr.dependency;
-import static android.R.attr.description;
-import static android.R.attr.icon;
-import static android.R.attr.maxItemsPerRow;
-import static android.R.attr.textAppearanceSearchResultTitle;
-import static android.R.attr.textOff;
-import static android.os.Build.USER;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.any;
-import static org.mockito.Mockito.atLeastOnce;
-import static org.mockito.Mockito.doCallRealMethod;
 import static org.mockito.Mockito.doNothing;
-import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 

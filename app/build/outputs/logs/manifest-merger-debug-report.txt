@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:2:11-55
 		INJECTED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml
@@ -17,8 +17,12 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:4:5-67
 	android:name
 		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:5:22-76
 application
-ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:5:5-29:19
+ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:6:5-30:19
 MERGED from [com.android.support:design:24.1.1] /Users/pattycase/.android/build-cache/02786419afeae6c7ebbd431d392ba0d0b9d1cedc/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:24.1.1] /Users/pattycase/.android/build-cache/151bb0a579ccad6671898394b7b53bdb9e2f1460/output/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:24.1.1] /Users/pattycase/.android/build-cache/8b7ccb609f5f54987f7b7f3a71ee5a78a684c4af/output/AndroidManifest.xml:22:5-20
@@ -27,47 +31,47 @@ MERGED from [com.android.support:support-v4:24.1.1] /Users/pattycase/.android/bu
 MERGED from [com.android.support:cardview-v7:24.1.1] /Users/pattycase/.android/build-cache/1a790a3c0e21dc8c6bc3cbd963251866f0ac940d/output/AndroidManifest.xml:22:5-20
 MERGED from [com.jakewharton.timber:timber:4.1.0] /Users/pattycase/.android/build-cache/e3ff737f52826c8b932ffca4f7e27f0a5846dd24/output/AndroidManifest.xml:8:5-20
 	android:label
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:9:9-41
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:10:9-41
 	android:supportsRtl
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:11:9-35
 	android:allowBackup
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:8:9-35
 	android:icon
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:8:9-39
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:9:9-39
 	android:theme
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:12:9-40
 	android:name
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:6:9-77
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:7:9-77
 activity#com.azurehorsecreations.photoalbum.presentation.ui.activities.SplashActivity
-ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:12:9-19:20
+ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:13:9-20:20
 	android:theme
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:14:13-47
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:15:13-47
 	android:name
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:13:13-104
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:14:13-104
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:15:13-18:29
+ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:16:13-19:29
 action#android.intent.action.MAIN
-ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:17:17-77
+ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:17:27-74
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:18:27-74
 activity#com.azurehorsecreations.photoalbum.presentation.ui.activities.PhotoActivity
-ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:20:9-24:20
+ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:21:9-25:20
 	android:launchMode
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:23:13-44
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:24:13-44
 	android:configChanges
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:22:13-63
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:23:13-63
 	android:name
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:21:13-103
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:22:13-103
 activity#com.azurehorsecreations.photoalbum.presentation.ui.activities.PhotoDetailPagerActivity
-ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:25:9-28:20
+ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:26:9-29:20
 	android:parentActivityName
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:27:13-117
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:28:13-117
 	android:name
-		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:26:13-114
+		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:27:13-114
 uses-sdk
 INJECTED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:24.1.1] /Users/pattycase/.android/build-cache/02786419afeae6c7ebbd431d392ba0d0b9d1cedc/output/AndroidManifest.xml:20:5-43
