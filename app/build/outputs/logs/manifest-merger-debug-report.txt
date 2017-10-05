@@ -23,12 +23,17 @@ ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.
 		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:5:22-76
 application
 ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:6:5-30:19
-MERGED from [com.android.support:design:24.1.1] /Users/pattycase/.android/build-cache/02786419afeae6c7ebbd431d392ba0d0b9d1cedc/output/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:24.1.1] /Users/pattycase/.android/build-cache/151bb0a579ccad6671898394b7b53bdb9e2f1460/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.1.1] /Users/pattycase/.android/build-cache/8b7ccb609f5f54987f7b7f3a71ee5a78a684c4af/output/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:24.1.1] /Users/pattycase/.android/build-cache/50a04001e7b53c165cc394afa492c3ae8ef2479e/output/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-v4:24.1.1] /Users/pattycase/.android/build-cache/8efcc5e831015bb43abf5295b06db8ebcca50867/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:cardview-v7:24.1.1] /Users/pattycase/.android/build-cache/1a790a3c0e21dc8c6bc3cbd963251866f0ac940d/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:24.2.0] /Users/pattycase/.android/build-cache/c936db906a54d34037232ab4c33cd619db9942ba/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:24.2.0] /Users/pattycase/.android/build-cache/c8cdf90eb8d9409ebf7446c773cb244e148a503b/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.0] /Users/pattycase/.android/build-cache/c3664423e4097b7816e7b867037be9955e9208a5/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.0] /Users/pattycase/.android/build-cache/fe56d489e8059c0cd98287a5a91acf6a6b4df682/output/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.2.0] /Users/pattycase/.android/build-cache/adaefa43708157de73356a28ba966dfe4bb363e3/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.0] /Users/pattycase/.android/build-cache/79ef6279291914215bcf42c44cc9baf8779316f6/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.0] /Users/pattycase/.android/build-cache/9f04916e1a3ed613d7bd28630a55aaea4d5ea322/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.0] /Users/pattycase/.android/build-cache/aa5b2b896b1a2927a1a8a4c91e6823e9578e2aec/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/pattycase/.android/build-cache/ce9e095cd11942bc0da6e85fd67221ffaaa882f7/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/pattycase/.android/build-cache/c2bfcaf2bdd0473423690aab8b3c289a4e89acc8/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:cardview-v7:24.2.0] /Users/pattycase/.android/build-cache/7f2a9a75f8c6f13c7070dc78c7981a4a25b5d422/output/AndroidManifest.xml:22:5-20
 MERGED from [com.jakewharton.timber:timber:4.1.0] /Users/pattycase/.android/build-cache/e3ff737f52826c8b932ffca4f7e27f0a5846dd24/output/AndroidManifest.xml:8:5-20
 	android:label
 		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:10:9-41
@@ -74,17 +79,22 @@ ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.
 		ADDED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml:27:13-114
 uses-sdk
 INJECTED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:design:24.1.1] /Users/pattycase/.android/build-cache/02786419afeae6c7ebbd431d392ba0d0b9d1cedc/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:24.1.1] /Users/pattycase/.android/build-cache/9f54c827526a0e953636ba57d6fba693f5c6374c/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:24.1.1] /Users/pattycase/.android/build-cache/151bb0a579ccad6671898394b7b53bdb9e2f1460/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:24.1.1] /Users/pattycase/.android/build-cache/8b7ccb609f5f54987f7b7f3a71ee5a78a684c4af/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:24.1.1] /Users/pattycase/.android/build-cache/50a04001e7b53c165cc394afa492c3ae8ef2479e/output/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-v4:24.1.1] /Users/pattycase/.android/build-cache/8efcc5e831015bb43abf5295b06db8ebcca50867/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:cardview-v7:24.1.1] /Users/pattycase/.android/build-cache/1a790a3c0e21dc8c6bc3cbd963251866f0ac940d/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:24.2.0] /Users/pattycase/.android/build-cache/c936db906a54d34037232ab4c33cd619db9942ba/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:24.2.0] /Users/pattycase/.android/build-cache/c8cdf90eb8d9409ebf7446c773cb244e148a503b/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:24.2.0] /Users/pattycase/.android/build-cache/c3664423e4097b7816e7b867037be9955e9208a5/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.2.0] /Users/pattycase/.android/build-cache/fe56d489e8059c0cd98287a5a91acf6a6b4df682/output/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.2.0] /Users/pattycase/.android/build-cache/adaefa43708157de73356a28ba966dfe4bb363e3/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:24.2.0] /Users/pattycase/.android/build-cache/79ef6279291914215bcf42c44cc9baf8779316f6/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:24.2.0] /Users/pattycase/.android/build-cache/9f04916e1a3ed613d7bd28630a55aaea4d5ea322/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-media-compat:24.2.0] /Users/pattycase/.android/build-cache/aa5b2b896b1a2927a1a8a4c91e6823e9578e2aec/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:recyclerview-v7:24.2.0] /Users/pattycase/.android/build-cache/c6d84e9d3558a7f6f15c8310059553dcb524a9eb/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/pattycase/.android/build-cache/ce9e095cd11942bc0da6e85fd67221ffaaa882f7/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.0] /Users/pattycase/.android/build-cache/c2bfcaf2bdd0473423690aab8b3c289a4e89acc8/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:cardview-v7:24.2.0] /Users/pattycase/.android/build-cache/7f2a9a75f8c6f13c7070dc78c7981a4a25b5d422/output/AndroidManifest.xml:20:5-43
 MERGED from [com.jakewharton.timber:timber:4.1.0] /Users/pattycase/.android/build-cache/e3ff737f52826c8b932ffca4f7e27f0a5846dd24/output/AndroidManifest.xml:6:5-44
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/pattycase/.android/build-cache/a68bb0372a3a36e43692d26348b2bd0daf8cf460/output/AndroidManifest.xml:19:5-43
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:24.1.1] /Users/pattycase/.android/build-cache/151bb0a579ccad6671898394b7b53bdb9e2f1460/output/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:24.2.0] /Users/pattycase/.android/build-cache/c8cdf90eb8d9409ebf7446c773cb244e148a503b/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/pattycase/Development/PhotoAlbum/app/src/main/AndroidManifest.xml

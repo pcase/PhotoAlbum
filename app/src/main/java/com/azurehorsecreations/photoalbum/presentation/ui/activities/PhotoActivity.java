@@ -3,6 +3,7 @@ package com.azurehorsecreations.photoalbum.presentation.ui.activities;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.util.DiffUtil;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ProgressBar;
@@ -14,6 +15,7 @@ import com.azurehorsecreations.photoalbum.presentation.presenters.IPhotoMetadata
 import com.azurehorsecreations.photoalbum.presentation.presenters.impl.PhotoMetadataPresenterImpl;
 import com.azurehorsecreations.photoalbum.presentation.ui.EndlessRecyclerViewScrollListener;
 import com.azurehorsecreations.photoalbum.presentation.ui.IPhotoView;
+import com.azurehorsecreations.photoalbum.presentation.ui.PhotoDiffCallback;
 import com.azurehorsecreations.photoalbum.presentation.ui.adapters.PhotoAdapter;
 import com.azurehorsecreations.photoalbum.presentation.ui.navigation.PhotoNavigator;
 import com.azurehorsecreations.photoalbum.utils.NetworkConnectivityChecker;
@@ -115,15 +117,12 @@ public class PhotoActivity extends AppCompatActivity implements IPhotoView, Phot
 
     @Override
     public void displayPhotoInformation(List<PhotoMetadata> photos) {
-        photoMetadataList.clear();
-        if (mAdapter != null && mAdapter.getItemCount() > 0) {
-            for (int i = 0; i < mAdapter.getItemCount(); i++) {
-                photoMetadataList.add(mAdapter.getItem(i));
-            }
+        if (mAdapter == null || mAdapter.getItemCount() == 0) {
+            photoMetadataList.addAll(photos);
+            mAdapter = new PhotoAdapter(this, (ArrayList<PhotoMetadata>) photoMetadataList, this, isPortrait);
+        } else {
+            mAdapter.updatePhotoListItems(photos);
         }
-        photoMetadataList.addAll(photos);
-        mAdapter = new PhotoAdapter(this, (ArrayList<PhotoMetadata>) photoMetadataList, this, isPortrait);
-        mAdapter.notifyDataSetChanged();
         mRecyclerView.setAdapter(mAdapter);
     }
 

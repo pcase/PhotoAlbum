@@ -3,6 +3,7 @@ package com.azurehorsecreations.photoalbum.presentation.ui.adapters;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
+import android.support.v7.util.DiffUtil;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,9 +13,11 @@ import android.widget.TextView;
 import com.azurehorsecreations.photoalbum.contants.PhotoConstants;
 import com.azurehorsecreations.photoalbum.domain.model.PhotoMetadata;
 import com.azurehorsecreations.photoalbum.R;
+import com.azurehorsecreations.photoalbum.presentation.ui.PhotoDiffCallback;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * PhotoAdapter
@@ -98,5 +101,14 @@ public class PhotoAdapter extends RecyclerView.Adapter<PhotoAdapter.ViewHolder> 
 
     public interface OnItemClickListener {
         void onClick(PhotoMetadata item);
+    }
+
+    public void updatePhotoListItems(List<PhotoMetadata> photos) {
+//        this.photoMetadatasList.clear();
+//        this.photoMetadatasList.addAll(photos);
+
+        final PhotoDiffCallback diffCallback = new PhotoDiffCallback(this.photoMetadatasList, photos);
+        final DiffUtil.DiffResult diffResult = DiffUtil.calculateDiff(diffCallback);
+        diffResult.dispatchUpdatesTo(this);
     }
 }

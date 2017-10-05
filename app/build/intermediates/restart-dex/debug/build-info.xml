@@ -6,7 +6,7 @@
     density="560dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1507163761562"
+    timestamp="1507174985332"
     token="7987935724005892647"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -18,19 +18,19 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="267" />
+        duration="179" />
     <task
         name="verifier"
-        duration="147" />
+        duration="67" />
 
     <artifact
         location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
         type="SPLIT" />
     <artifact
         location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -39,16 +39,16 @@
         location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
         type="SPLIT" />
     <artifact
+        location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
         location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
     <artifact
         location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
         type="SPLIT" />
     <artifact
         location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
@@ -62,16 +62,16 @@
 
     <build
         build-mode="FULL"
-        timestamp="1507163761562"
+        timestamp="1507174985332"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
             location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -80,16 +80,16 @@
             location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
