@@ -1,4 +1,4 @@
-#Wed Oct 04 15:06:03 PDT 2017
+#Wed Oct 04 17:36:07 PDT 2017
 file.9=/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.13.0_cce240aff69309d0973e0abaf749bc2447672179/classes.dex
 base.10=/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_efa084ffe55d4821d9e699c6657e6b00484c1ca7
 file.8=/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/transforms/dex/debug/folders/1000/10/jsr250-api-1.0_a6d65a0d5ac0926d8daecabe491267cb83f2be65/classes.dex
