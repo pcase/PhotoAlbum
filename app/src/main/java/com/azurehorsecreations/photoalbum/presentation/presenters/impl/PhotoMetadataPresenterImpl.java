@@ -53,10 +53,6 @@ public class PhotoMetadataPresenterImpl implements IPhotoMetadataPresenter,
     }
 
     @Override
-    public void detachView(IPhotoView view) {
-    }
-
-    @Override
     public void setNavigator(INavigator navigator) {
         this.mNavigator = navigator;
     }

@@ -8,7 +8,7 @@ import io.reactivex.Observable;
 
 /**
  * IPhotoRepository
- * Interface for the photo repository
+ * Interface for the photo repository which is responsible for getting photos.
  */
 
 public interface IPhotoRepository {

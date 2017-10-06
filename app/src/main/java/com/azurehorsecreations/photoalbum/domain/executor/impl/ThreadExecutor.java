@@ -9,8 +9,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * ThreadExecutor
  * This singleton class will make sure that each interactor operation gets a background thread.
- * <p/>
  */
 public class ThreadExecutor implements IExecutor {
 

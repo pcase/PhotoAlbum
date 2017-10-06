@@ -10,7 +10,6 @@ import com.azurehorsecreations.photoalbum.presentation.ui.navigation.INavigator;
 
 public interface IPhotoMetadataPresenter {
     void attachView (IPhotoView view);
-    void detachView (IPhotoView view);
     void setNavigator(INavigator navigator);
     void navigateToNewScreen();
     void loadPhotos();
