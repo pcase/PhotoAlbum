@@ -17,8 +17,9 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * ProductDetailPagerActivity di
- * Displays the photo details in a swipeable viewer
+ * ProductDetailPagerActivity
+ * Displays the photo details in a swipeable viewer.
+ * It currently only displays one fragment.
  **/
 
 public class PhotoDetailPagerActivity extends AppCompatActivity {
@@ -42,18 +43,5 @@ public class PhotoDetailPagerActivity extends AppCompatActivity {
         fragments.add(PhotoDetailFragment.newInstance(photoArray[0]));
         adapterViewPager = new PhotoDetailPagerAdapter(getSupportFragmentManager(), fragments);
         viewPager.setAdapter(adapterViewPager);
-
-//        Parcelable[] parcelableProductArray = getIntent().getParcelableArrayExtra(PRODUCT);
-//        productArray = new Product[parcelableProductArray.length];
-//        for (int i=0; i<parcelableProductArray.length; ++i) {
-//            productArray[i] = (Product) parcelableProductArray[i];
-//        }
-//        fragments = new ArrayList<>();
-//        for (int i=0; i<productArray.length; ++i) {
-//            fragments.add(ProductDetailFragment.newInstance(productArray[i]));
-//        }
-//        ViewPager vpPager = (ViewPager) findViewById(R.id.vpPager);
-//        adapterViewPager = new ProductDetailPagerAdapter(getSupportFragmentManager(), fragments);
-//        vpPager.setAdapter(adapterViewPager);
     }
 }
