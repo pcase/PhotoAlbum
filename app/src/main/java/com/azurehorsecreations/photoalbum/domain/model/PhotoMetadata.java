@@ -6,8 +6,9 @@ import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
 
-/*
- * PhotoMetadata class represents the photo model
+/**
+ * PhotoMetadata
+ * This represents the photo model
  */
 
 public class

@@ -3,8 +3,8 @@ package com.azurehorsecreations.photoalbum.domain.executor;
 import com.azurehorsecreations.photoalbum.domain.interactors.base.AbstractInteractor;
 
 /**
- * This executor is responsible for running interactors on background threads.
- * <p/>
+ * IExecutor
+ * This interface is responsible for running interactors on background threads.
  */
 public interface IExecutor {
 

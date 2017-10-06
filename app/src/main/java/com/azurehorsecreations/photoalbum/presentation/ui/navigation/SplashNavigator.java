@@ -4,7 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 
 /**
- * Created by pattycase on 9/14/17.
+ * SplashNavigator
+ * Navigates from the splash screen to another activity
  */
 
 public class SplashNavigator implements INavigator {

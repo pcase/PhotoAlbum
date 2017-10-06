@@ -8,6 +8,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.azurehorsecreations.photoalbum.R;
 import com.azurehorsecreations.photoalbum.domain.model.PhotoMetadata;
@@ -75,7 +76,7 @@ public class PhotoActivity extends AppCompatActivity implements IPhotoView, Phot
         if (NetworkConnectivityChecker.isConnected(this)) {
             mPresenter.loadPhotos();
         } else {
-            showError("It looks like your network connection is turned off. Please turn it on, and try again.");
+            Toast.makeText(this, R.string.no_network, Toast.LENGTH_LONG).show();
         }
     }
 
@@ -89,7 +90,6 @@ public class PhotoActivity extends AppCompatActivity implements IPhotoView, Phot
             mRecyclerView.setLayoutManager(gridLayoutManager);
         }
         mAdapter = new PhotoAdapter(this, (ArrayList<PhotoMetadata>) photoMetadataList, this, isPortrait);
-        mAdapter.notifyDataSetChanged();
         mRecyclerView.setAdapter(mAdapter);
     }
 

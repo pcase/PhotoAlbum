@@ -60,12 +60,12 @@
         "source": "/Users/pattycase/.android/build-cache/c8cdf90eb8d9409ebf7446c773cb244e148a503b/output/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
-        "source": "/Users/pattycase/.android/build-cache/c8cdf90eb8d9409ebf7446c773cb244e148a503b/output/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
         "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
         "source": "/Users/pattycase/.android/build-cache/c8cdf90eb8d9409ebf7446c773cb244e148a503b/output/res/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "/Users/pattycase/.android/build-cache/c8cdf90eb8d9409ebf7446c773cb244e148a503b/output/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "/Users/pattycase/Development/PhotoAlbum/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_longpressed_holo.9.png",

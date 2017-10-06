@@ -10,7 +10,7 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
  * Enables the loading of more data when a list is scrolled
  *
  * This code is from https://guides.codepath.com/android/Endless-Scrolling-with-AdapterViews-and-RecyclerView
- **/
+ */
 
 public abstract class EndlessRecyclerViewScrollListener extends RecyclerView.OnScrollListener {
     // The minimum amount of items to have below your current scroll position

@@ -11,7 +11,7 @@ import io.reactivex.Observable;
 
 /**
  * PhotoRepository
- * Gets the photos and returns an RxJava Observable list of photos
+ * Gets the photos and them as an RxJava Observable
  */
 
 public class PhotoRepository implements IPhotoRepository {
@@ -20,6 +20,5 @@ public class PhotoRepository implements IPhotoRepository {
     @Override
     public Observable<List<PhotoMetadata>> getPhotoMetadata() {
         return Observable.defer(() -> RestPhotoClient.getInstance().create(IPhotoAPI.class).fetchPhotoMetadata());
-//        return Observable.defer(() -> PhotoWebService.getPhotoWebService(ApplicationContextProvider.getContext()).create(IPhotoAPI.class).fetchPhotoMetadata());
     }
 }

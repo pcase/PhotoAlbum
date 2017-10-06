@@ -5,4 +5,5 @@
     <string name="retrieved">Retrieved!</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="no_network">"It looks like your network connection is turned off. Please turn it on, and try again."</string>
 </resources>

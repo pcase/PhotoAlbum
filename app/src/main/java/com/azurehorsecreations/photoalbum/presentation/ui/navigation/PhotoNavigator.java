@@ -6,7 +6,8 @@ import android.content.Intent;
 import com.azurehorsecreations.photoalbum.domain.model.PhotoMetadata;
 
 /**
- * Created by pattycase on 9/14/17.
+ * PhotoNavigator
+ * Navigates to another activity and passes a PhotoMetadata object in the intent.
  */
 
 public class PhotoNavigator implements INavigator {

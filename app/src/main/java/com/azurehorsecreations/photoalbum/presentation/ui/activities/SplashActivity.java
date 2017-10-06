@@ -8,9 +8,9 @@ import com.azurehorsecreations.photoalbum.presentation.presenters.impl.SplashPre
 import com.azurehorsecreations.photoalbum.presentation.ui.navigation.SplashNavigator;
 
 /**
- * SplashActivity d
- * Displays the splash screen
- **/
+ * SplashActivity
+ * Displays the splash screen and navigates to the main activity.
+ */
 
 public class SplashActivity extends AppCompatActivity {
     protected ISplashPresenter mPresenter;

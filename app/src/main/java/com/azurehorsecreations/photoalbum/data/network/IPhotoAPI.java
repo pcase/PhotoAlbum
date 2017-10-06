@@ -11,7 +11,7 @@ import retrofit2.http.GET;
 
 /**
  * IPhotoAPI
- * Defines the API endpoints
+ * Defines the photo API endpoints
  */
 
 public interface IPhotoAPI {

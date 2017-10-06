@@ -1,7 +1,8 @@
 package com.azurehorsecreations.photoalbum.presentation.ui.navigation;
 
 /**
- * Created by pattycase on 9/14/17.
+ * INavigator
+ * Interface for navigating to another activity
  */
 
 public interface INavigator {
